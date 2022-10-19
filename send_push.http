@@ -1,0 +1,34 @@
+POST https://api-push.cloud.toast.com/push/v2.4/appkeys/HXRDtlLOpAqd32oz/messages
+Content-Type: application/json
+X-Secret-Key: MYFuDyat
+
+{
+    "target": {
+        "type": "ALL"
+    },
+    "content": 
+    {
+  "default": {
+    "title": "제목임",
+    "body": "바디임",
+    "style": {
+      "useHtmlStyle": true
+    },
+    "clickAction": "https://blog.taeju.kim",
+    "badge": 2,
+    "richMessage": {
+      "buttons": [
+        {
+          "name": "enter",
+          "buttonType": "REPLY",
+          "submitName": "submit",
+          "hint": "hint"
+        }
+      ]
+    }
+  }
+},
+    "messageType": "AD",
+    "contact": "1588-1588",
+    "removeGuide": "매뉴 > 설정"
+}
